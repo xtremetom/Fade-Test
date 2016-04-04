@@ -11,6 +11,9 @@
     "gravityY": 0.0,
     "allowSleep": false
   },
+  "variables": {
+    "variables": []
+  },
   "layers": [
     {
       "name": "Background",
@@ -19,9 +22,25 @@
       "visible": true,
       "cordsSystem": "WORLD",
       "@class": "EditorLayer"
+    },
+    {
+      "name": "textlayer1",
+      "id": 1,
+      "locked": true,
+      "visible": false,
+      "cordsSystem": "WORLD",
+      "@class": "EditorLayer"
+    },
+    {
+      "name": "textlayer2",
+      "id": 2,
+      "locked": false,
+      "visible": false,
+      "cordsSystem": "WORLD",
+      "@class": "EditorLayer"
     }
   ],
-  "activeLayerId": 0,
+  "activeLayerId": 1,
   "groupIds": [],
   "schemes": [
     {
@@ -140,8 +159,8 @@
     {
       "components": [
         {
-          "x": 0.5316,
-          "y": 5.4637,
+          "x": 1.9085,
+          "y": 5.1319,
           "scaleX": 1.0,
           "scaleY": 1.0,
           "rotation": 0.0,
@@ -188,6 +207,7 @@
           "@class": "Renderable"
         },
         {
+          "id": "text",
           "@class": "VisID"
         }
       ],
@@ -196,8 +216,153 @@
     {
       "components": [
         {
-          "x": 0.4625,
-          "y": 0.5734,
+          "x": 1.5227804,
+          "y": 4.60174,
+          "scaleX": 1.0,
+          "scaleY": 1.0,
+          "rotation": 0.0,
+          "@class": "Transform"
+        },
+        {
+          "originX": 0.555,
+          "originY": 0.085,
+          "@class": "Origin"
+        },
+        {
+          "tint": {
+            "r": 0.0,
+            "g": 0.0,
+            "b": 0.0,
+            "a": 1.0
+          },
+          "@class": "Tint"
+        },
+        {
+          "asset": {
+            "fontSize": 36,
+            "relativePath": "font/PRIMEMIN.ttf",
+            "@class": "TtfFontAsset"
+          },
+          "@class": "AssetReference"
+        },
+        {
+          "pixelsPerUnits": 100.0,
+          "scale": 0.01,
+          "@class": "PixelsPerUnit"
+        },
+        {
+          "text": "test text",
+          "autoSetOriginToCenter": false,
+          "isUsesDistanceField": false,
+          "@class": "ProtoVisText"
+        },
+        {
+          "layerId": 0,
+          "@class": "Layer"
+        },
+        {
+          "uuid": "d6b89381-0d76-471e-ac00-36acb6a95daa",
+          "@class": "VisUUID"
+        },
+        {
+          "zIndex": 1,
+          "@class": "Renderable"
+        },
+        {
+          "id": "text",
+          "@class": "VisID"
+        },
+        {
+          "componentsToDrop": [
+            {
+              "@content": "PixelsPerUnit",
+              "@class": "Class"
+            }
+          ],
+          "@class": "ExporterDropsComponent"
+        }
+      ],
+      "@class": "EntityScheme"
+    },
+    {
+      "components": [
+        {
+          "x": 5.4788,
+          "y": 4.5936,
+          "scaleX": 1.0,
+          "scaleY": 1.0,
+          "rotation": 0.0,
+          "@class": "Transform"
+        },
+        {
+          "originX": 0.555,
+          "originY": 0.085,
+          "@class": "Origin"
+        },
+        {
+          "tint": {
+            "r": 0.0,
+            "g": 0.0,
+            "b": 0.0,
+            "a": 1.0
+          },
+          "@class": "Tint"
+        },
+        {
+          "asset": {
+            "fontSize": 36,
+            "relativePath": "font/PRIMEMIN.ttf",
+            "@class": "TtfFontAsset"
+          },
+          "@class": "AssetReference"
+        },
+        {
+          "pixelsPerUnits": 100.0,
+          "scale": 0.01,
+          "@class": "PixelsPerUnit"
+        },
+        {
+          "@class": "Invisible"
+        },
+        {
+          "text": "test text 1",
+          "autoSetOriginToCenter": false,
+          "isUsesDistanceField": false,
+          "@class": "ProtoVisText"
+        },
+        {
+          "layerId": 1,
+          "@class": "Layer"
+        },
+        {
+          "uuid": "5f26b89a-e3f9-47b1-83ad-eaea152cc09a",
+          "@class": "VisUUID"
+        },
+        {
+          "zIndex": 1,
+          "@class": "Renderable"
+        },
+        {
+          "id": "text",
+          "@class": "VisID"
+        },
+        {
+          "componentsToDrop": [
+            {
+              "@content": "PixelsPerUnit",
+              "@class": "Class"
+            }
+          ],
+          "@class": "ExporterDropsComponent"
+        }
+      ],
+      "@class": "EntityScheme"
+    },
+    {
+      "components": [
+        {
+          "x": 6.0211,
+          "y": 5.1278,
           "scaleX": 1.0,
           "scaleY": 1.0,
           "rotation": 0.0,
@@ -219,7 +384,7 @@
         },
         {
           "asset": {
-            "relativePath": "gfx/lose.png",
+            "relativePath": "gfx/win.png",
             "@class": "TextureRegionAsset"
           },
           "@class": "AssetReference"
@@ -232,11 +397,14 @@
           "@class": "ProtoVisSprite"
         },
         {
-          "layerId": 0,
+          "@class": "Invisible"
+        },
+        {
+          "layerId": 1,
           "@class": "Layer"
         },
         {
-          "uuid": "b783f5a3-8321-44bd-b2e5-c37838f27191",
+          "uuid": "33037b1f-c51a-4fcf-adc9-5bcc106628bb",
           "@class": "VisUUID"
         },
         {
@@ -244,6 +412,141 @@
           "@class": "Renderable"
         },
         {
+          "id": "text",
+          "@class": "VisID"
+        }
+      ],
+      "@class": "EntityScheme"
+    },
+    {
+      "components": [
+        {
+          "x": 9.1249,
+          "y": 4.5936,
+          "scaleX": 1.0,
+          "scaleY": 1.0,
+          "rotation": 0.0,
+          "@class": "Transform"
+        },
+        {
+          "originX": 0.555,
+          "originY": 0.085,
+          "@class": "Origin"
+        },
+        {
+          "tint": {
+            "r": 0.0,
+            "g": 0.0,
+            "b": 0.0,
+            "a": 1.0
+          },
+          "@class": "Tint"
+        },
+        {
+          "asset": {
+            "fontSize": 36,
+            "relativePath": "font/PRIMEMIN.ttf",
+            "@class": "TtfFontAsset"
+          },
+          "@class": "AssetReference"
+        },
+        {
+          "pixelsPerUnits": 100.0,
+          "scale": 0.01,
+          "@class": "PixelsPerUnit"
+        },
+        {
+          "@class": "Invisible"
+        },
+        {
+          "text": "test text 2",
+          "autoSetOriginToCenter": false,
+          "isUsesDistanceField": false,
+          "@class": "ProtoVisText"
+        },
+        {
+          "layerId": 2,
+          "@class": "Layer"
+        },
+        {
+          "uuid": "43afea35-345c-453a-96d9-b84409de92d6",
+          "@class": "VisUUID"
+        },
+        {
+          "zIndex": 1,
+          "@class": "Renderable"
+        },
+        {
+          "id": "text",
+          "@class": "VisID"
+        },
+        {
+          "componentsToDrop": [
+            {
+              "@content": "PixelsPerUnit",
+              "@class": "Class"
+            }
+          ],
+          "@class": "ExporterDropsComponent"
+        }
+      ],
+      "@class": "EntityScheme"
+    },
+    {
+      "components": [
+        {
+          "x": 9.6541,
+          "y": 5.078,
+          "scaleX": 1.0,
+          "scaleY": 1.0,
+          "rotation": 0.0,
+          "@class": "Transform"
+        },
+        {
+          "originX": 0.64,
+          "originY": 0.64,
+          "@class": "Origin"
+        },
+        {
+          "tint": {
+            "r": 1.0,
+            "g": 1.0,
+            "b": 1.0,
+            "a": 1.0
+          },
+          "@class": "Tint"
+        },
+        {
+          "asset": {
+            "relativePath": "gfx/win.png",
+            "@class": "TextureRegionAsset"
+          },
+          "@class": "AssetReference"
+        },
+        {
+          "flipX": false,
+          "flipY": false,
+          "width": 1.28,
+          "height": 1.28,
+          "@class": "ProtoVisSprite"
+        },
+        {
+          "@class": "Invisible"
+        },
+        {
+          "layerId": 2,
+          "@class": "Layer"
+        },
+        {
+          "uuid": "32276396-ab3e-49b0-a906-61985b27ad5f",
+          "@class": "VisUUID"
+        },
+        {
+          "zIndex": 1,
+          "@class": "Renderable"
+        },
+        {
+          "id": "text",
           "@class": "VisID"
         }
       ],

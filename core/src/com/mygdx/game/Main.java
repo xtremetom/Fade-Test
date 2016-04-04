@@ -4,6 +4,7 @@ import com.badlogic.gdx.ApplicationAdapter;
 import com.badlogic.gdx.Gdx;
 import com.badlogic.gdx.graphics.GL20;
 import com.badlogic.gdx.graphics.g2d.SpriteBatch;
+import com.kotcrab.vis.runtime.font.FreeTypeFontProvider;
 import com.kotcrab.vis.runtime.scene.Scene;
 import com.kotcrab.vis.runtime.scene.SceneLoader;
 import com.kotcrab.vis.runtime.scene.VisAssetManager;
@@ -28,6 +29,7 @@ public class Main extends ApplicationAdapter {
 		batch = new SpriteBatch();
 
 		manager = new VisAssetManager(batch);
+		manager.enableFreeType(new FreeTypeFontProvider());
 
 		SceneLoader.SceneParameter parameter = new SceneLoader.SceneParameter();
 		parameter.config.addSystem(new SpriteBoundsCreator());
