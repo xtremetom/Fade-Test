@@ -74,7 +74,7 @@ public class ButtonManager extends BaseSceneManager {
         float y = unprojectVec.y;
 
         if (buttonBounds.contains(x, y)) {
-            //Animations.fade_out(buttonTint);
+            Animations.fade_out(buttonTint);
             switch(state){
                 case layer0:
                     state = State.layer1;

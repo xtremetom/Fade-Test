@@ -1,34 +1,160 @@
 
 cache.png
-size: 2048,1024
+size: 4096,2048
 format: RGBA8888
 filter: Nearest,Nearest
 repeat: none
 gfx/lose
   rotate: false
-  xy: 1284, 840
+  xy: 2, 2
   size: 128, 128
   orig: 128, 128
   offset: 0, 0
   index: -1
 gfx/play
   rotate: false
-  xy: 2, 132
+  xy: 3870, 1820
   size: 212, 114
   orig: 212, 114
   offset: 0, 0
   index: -1
 gfx/splash
   rotate: false
-  xy: 2, 248
+  xy: 2, 1214
   size: 1280, 720
   orig: 1280, 720
   offset: 0, 0
   index: -1
 gfx/win
   rotate: false
-  xy: 2, 2
+  xy: 762, 507
   size: 128, 128
   orig: 128, 128
+  offset: 0, 0
+  index: -1
+spriter/pirate/lose/001
+  rotate: false
+  xy: 481, 637
+  size: 428, 575
+  orig: 428, 575
+  offset: 0, 0
+  index: -1
+gfx/pirate
+  rotate: false
+  xy: 481, 637
+  size: 428, 575
+  orig: 428, 575
+  offset: 0, 0
+  index: -1
+spriter/pirate/lose/002
+  rotate: false
+  xy: 3048, 1358
+  size: 414, 576
+  orig: 414, 576
+  offset: 0, 0
+  index: -1
+spriter/pirate/lose/010
+  rotate: false
+  xy: 3048, 1358
+  size: 414, 576
+  orig: 414, 576
+  offset: 0, 0
+  index: -1
+spriter/pirate/lose/003
+  rotate: false
+  xy: 3464, 1367
+  size: 404, 567
+  orig: 404, 567
+  offset: 0, 0
+  index: -1
+spriter/pirate/lose/009
+  rotate: false
+  xy: 3464, 1367
+  size: 404, 567
+  orig: 404, 567
+  offset: 0, 0
+  index: -1
+spriter/pirate/lose/004
+  rotate: false
+  xy: 2, 132
+  size: 438, 553
+  orig: 438, 553
+  offset: 0, 0
+  index: -1
+spriter/pirate/lose/008
+  rotate: false
+  xy: 2, 132
+  size: 438, 553
+  orig: 438, 553
+  offset: 0, 0
+  index: -1
+spriter/pirate/lose/005
+  rotate: false
+  xy: 2, 687
+  size: 477, 525
+  orig: 477, 525
+  offset: 0, 0
+  index: -1
+spriter/pirate/lose/007
+  rotate: false
+  xy: 2, 687
+  size: 477, 525
+  orig: 477, 525
+  offset: 0, 0
+  index: -1
+spriter/pirate/lose/006
+  rotate: false
+  xy: 1284, 1409
+  size: 472, 525
+  orig: 472, 525
+  offset: 0, 0
+  index: -1
+spriter/pirate/win/1
+  rotate: false
+  xy: 1758, 1359
+  size: 428, 575
+  orig: 428, 575
+  offset: 0, 0
+  index: -1
+spriter/pirate/win/2
+  rotate: false
+  xy: 911, 683
+  size: 371, 529
+  orig: 371, 529
+  offset: 0, 0
+  index: -1
+spriter/pirate/win/3
+  rotate: false
+  xy: 442, 51
+  size: 318, 584
+  orig: 318, 584
+  offset: 0, 0
+  index: -1
+spriter/pirate/win/4
+  rotate: false
+  xy: 1284, 767
+  size: 328, 640
+  orig: 328, 640
+  offset: 0, 0
+  index: -1
+spriter/pirate/win/5
+  rotate: false
+  xy: 1614, 773
+  size: 318, 584
+  orig: 318, 584
+  offset: 0, 0
+  index: -1
+spriter/pirate/win/6
+  rotate: false
+  xy: 2188, 1426
+  size: 428, 508
+  orig: 428, 508
+  offset: 0, 0
+  index: -1
+spriter/pirate/win/7
+  rotate: false
+  xy: 2618, 1399
+  size: 428, 535
+  orig: 428, 535
   offset: 0, 0
   index: -1

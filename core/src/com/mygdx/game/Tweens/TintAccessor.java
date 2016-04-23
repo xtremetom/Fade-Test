@@ -30,7 +30,7 @@ public class TintAccessor implements TweenAccessor<Tint> {
 
             case OPACITY:
                 tint = target.getTint();
-                target.getTint().set(tint.r, tint.g, tint.b, newValues[0]);
+                target.set(tint.r, tint.g, tint.b, newValues[0]);
                 break;
 
             default: assert false;

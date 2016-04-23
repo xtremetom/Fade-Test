@@ -1,10 +1,10 @@
 {
   "versionCode": 2,
   "path": "scene/test.scene",
-  "width": 12.8,
-  "height": 7.2,
-  "pixelsPerUnit": 100.0,
-  "viewport": "STRETCH",
+  "width": 1280.0,
+  "height": 720.0,
+  "pixelsPerUnit": 1.0,
+  "viewport": "EXTEND",
   "physicsSettings": {
     "physicsEnabled": false,
     "gravityX": 0.0,
@@ -24,82 +24,17 @@
       "@class": "EditorLayer"
     },
     {
-      "name": "textlayer1",
+      "name": "testLayer",
       "id": 1,
       "locked": true,
       "visible": false,
       "cordsSystem": "WORLD",
       "@class": "EditorLayer"
-    },
-    {
-      "name": "textlayer2",
-      "id": 2,
-      "locked": false,
-      "visible": false,
-      "cordsSystem": "WORLD",
-      "@class": "EditorLayer"
     }
   ],
-  "activeLayerId": 1,
+  "activeLayerId": 0,
   "groupIds": [],
   "schemes": [
-    {
-      "components": [
-        {
-          "x": 5.5375,
-          "y": 2.9071,
-          "scaleX": 1.0,
-          "scaleY": 1.0,
-          "rotation": 0.0,
-          "@class": "Transform"
-        },
-        {
-          "originX": 1.06,
-          "originY": 0.57,
-          "@class": "Origin"
-        },
-        {
-          "tint": {
-            "r": 1.0,
-            "g": 1.0,
-            "b": 1.0,
-            "a": 1.0
-          },
-          "@class": "Tint"
-        },
-        {
-          "asset": {
-            "relativePath": "gfx/play.png",
-            "@class": "TextureRegionAsset"
-          },
-          "@class": "AssetReference"
-        },
-        {
-          "flipX": false,
-          "flipY": false,
-          "width": 2.12,
-          "height": 1.14,
-          "@class": "ProtoVisSprite"
-        },
-        {
-          "layerId": 0,
-          "@class": "Layer"
-        },
-        {
-          "uuid": "d2561b91-702e-4f61-b59b-96b3bc3f23da",
-          "@class": "VisUUID"
-        },
-        {
-          "zIndex": 1,
-          "@class": "Renderable"
-        },
-        {
-          "id": "button",
-          "@class": "VisID"
-        }
-      ],
-      "@class": "EntityScheme"
-    },
     {
       "components": [
         {
@@ -111,8 +46,8 @@
           "@class": "Transform"
         },
         {
-          "originX": 6.4,
-          "originY": 3.6,
+          "originX": 640.0,
+          "originY": 360.0,
           "@class": "Origin"
         },
         {
@@ -134,8 +69,8 @@
         {
           "flipX": false,
           "flipY": false,
-          "width": 12.8,
-          "height": 7.2,
+          "width": 1280.0,
+          "height": 720.0,
           "@class": "ProtoVisSprite"
         },
         {
@@ -143,7 +78,7 @@
           "@class": "Layer"
         },
         {
-          "uuid": "56bb743c-5785-4440-8d74-0f3a6adc3c79",
+          "uuid": "b867af08-b756-49d6-9238-6c50bf87e78f",
           "@class": "VisUUID"
         },
         {
@@ -152,6 +87,17 @@
         },
         {
           "@class": "VisID"
+        },
+        {
+          "variables": [
+            {
+              "key": "background",
+              "value": "true",
+              "@class-key": "String",
+              "@class-value": "String"
+            }
+          ],
+          "@class": "Variables"
         }
       ],
       "@class": "EntityScheme"
@@ -159,16 +105,16 @@
     {
       "components": [
         {
-          "x": 1.9085,
-          "y": 5.1319,
+          "x": 69.14783,
+          "y": 584.1862,
           "scaleX": 1.0,
           "scaleY": 1.0,
           "rotation": 0.0,
           "@class": "Transform"
         },
         {
-          "originX": 0.64,
-          "originY": 0.64,
+          "originX": 106.0,
+          "originY": 57.0,
           "@class": "Origin"
         },
         {
@@ -182,7 +128,7 @@
         },
         {
           "asset": {
-            "relativePath": "gfx/win.png",
+            "relativePath": "gfx/play.png",
             "@class": "TextureRegionAsset"
           },
           "@class": "AssetReference"
@@ -190,8 +136,8 @@
         {
           "flipX": false,
           "flipY": false,
-          "width": 1.28,
-          "height": 1.28,
+          "width": 212.0,
+          "height": 114.0,
           "@class": "ProtoVisSprite"
         },
         {
@@ -199,16 +145,26 @@
           "@class": "Layer"
         },
         {
-          "uuid": "dec834f5-3876-4809-a4b2-0e98afba0069",
+          "uuid": "1f6d9c36-0aea-496f-b7df-0ce3d236801f",
           "@class": "VisUUID"
         },
         {
-          "zIndex": 1,
+          "zIndex": 0,
           "@class": "Renderable"
         },
         {
-          "id": "text",
           "@class": "VisID"
+        },
+        {
+          "variables": [
+            {
+              "key": "button",
+              "value": "play",
+              "@class-key": "String",
+              "@class-value": "String"
+            }
+          ],
+          "@class": "Variables"
         }
       ],
       "@class": "EntityScheme"
@@ -216,70 +172,66 @@
     {
       "components": [
         {
-          "x": 1.5227804,
-          "y": 4.60174,
+          "x": -222.1796,
+          "y": 141.7472,
           "scaleX": 1.0,
           "scaleY": 1.0,
           "rotation": 0.0,
           "@class": "Transform"
         },
         {
-          "originX": 0.555,
-          "originY": 0.085,
+          "originX": 64.0,
+          "originY": 64.0,
           "@class": "Origin"
         },
         {
           "tint": {
-            "r": 0.0,
-            "g": 0.0,
-            "b": 0.0,
+            "r": 1.0,
+            "g": 1.0,
+            "b": 1.0,
             "a": 1.0
           },
           "@class": "Tint"
         },
         {
           "asset": {
-            "fontSize": 36,
-            "relativePath": "font/PRIMEMIN.ttf",
-            "@class": "TtfFontAsset"
+            "relativePath": "gfx/win.png",
+            "@class": "TextureRegionAsset"
           },
           "@class": "AssetReference"
         },
         {
-          "pixelsPerUnits": 100.0,
-          "scale": 0.01,
-          "@class": "PixelsPerUnit"
-        },
-        {
-          "text": "test text",
-          "autoSetOriginToCenter": false,
-          "isUsesDistanceField": false,
-          "@class": "ProtoVisText"
+          "flipX": false,
+          "flipY": false,
+          "width": 128.0,
+          "height": 128.0,
+          "@class": "ProtoVisSprite"
         },
         {
           "layerId": 0,
           "@class": "Layer"
         },
         {
-          "uuid": "d6b89381-0d76-471e-ac00-36acb6a95daa",
+          "uuid": "ea7ea10c-b97e-432a-aa78-25849db991e7",
           "@class": "VisUUID"
         },
         {
-          "zIndex": 1,
+          "zIndex": 0,
           "@class": "Renderable"
         },
         {
-          "id": "text",
           "@class": "VisID"
         },
         {
-          "componentsToDrop": [
+          "variables": [
             {
-              "@content": "PixelsPerUnit",
-              "@class": "Class"
+              "key": "uniqueId",
+              "value": "coin_win",
+              "@class-key": "String",
+              "@class-value": "String"
             }
           ],
-          "@class": "ExporterDropsComponent"
+          "@class": "Variables"
         }
       ],
       "@class": "EntityScheme"
@@ -287,90 +239,16 @@
     {
       "components": [
         {
-          "x": 5.4788,
-          "y": 4.5936,
+          "x": 318.64517,
+          "y": 583.30334,
           "scaleX": 1.0,
           "scaleY": 1.0,
           "rotation": 0.0,
           "@class": "Transform"
         },
         {
-          "originX": 0.555,
-          "originY": 0.085,
-          "@class": "Origin"
-        },
-        {
-          "tint": {
-            "r": 0.0,
-            "g": 0.0,
-            "b": 0.0,
-            "a": 1.0
-          },
-          "@class": "Tint"
-        },
-        {
-          "asset": {
-            "fontSize": 36,
-            "relativePath": "font/PRIMEMIN.ttf",
-            "@class": "TtfFontAsset"
-          },
-          "@class": "AssetReference"
-        },
-        {
-          "pixelsPerUnits": 100.0,
-          "scale": 0.01,
-          "@class": "PixelsPerUnit"
-        },
-        {
-          "@class": "Invisible"
-        },
-        {
-          "text": "test text 1",
-          "autoSetOriginToCenter": false,
-          "isUsesDistanceField": false,
-          "@class": "ProtoVisText"
-        },
-        {
-          "layerId": 1,
-          "@class": "Layer"
-        },
-        {
-          "uuid": "5f26b89a-e3f9-47b1-83ad-eaea152cc09a",
-          "@class": "VisUUID"
-        },
-        {
-          "zIndex": 1,
-          "@class": "Renderable"
-        },
-        {
-          "id": "text",
-          "@class": "VisID"
-        },
-        {
-          "componentsToDrop": [
-            {
-              "@content": "PixelsPerUnit",
-              "@class": "Class"
-            }
-          ],
-          "@class": "ExporterDropsComponent"
-        }
-      ],
-      "@class": "EntityScheme"
-    },
-    {
-      "components": [
-        {
-          "x": 6.0211,
-          "y": 5.1278,
-          "scaleX": 1.0,
-          "scaleY": 1.0,
-          "rotation": 0.0,
-          "@class": "Transform"
-        },
-        {
-          "originX": 0.64,
-          "originY": 0.64,
+          "originX": 106.0,
+          "originY": 57.0,
           "@class": "Origin"
         },
         {
@@ -384,7 +262,7 @@
         },
         {
           "asset": {
-            "relativePath": "gfx/win.png",
+            "relativePath": "gfx/play.png",
             "@class": "TextureRegionAsset"
           },
           "@class": "AssetReference"
@@ -392,102 +270,35 @@
         {
           "flipX": false,
           "flipY": false,
-          "width": 1.28,
-          "height": 1.28,
+          "width": 212.0,
+          "height": 114.0,
           "@class": "ProtoVisSprite"
         },
         {
-          "@class": "Invisible"
-        },
-        {
-          "layerId": 1,
+          "layerId": 0,
           "@class": "Layer"
         },
         {
-          "uuid": "33037b1f-c51a-4fcf-adc9-5bcc106628bb",
+          "uuid": "3c87025c-2c70-4c1d-8d01-a500e8f4272e",
           "@class": "VisUUID"
         },
         {
-          "zIndex": 1,
+          "zIndex": 0,
           "@class": "Renderable"
         },
         {
-          "id": "text",
-          "@class": "VisID"
-        }
-      ],
-      "@class": "EntityScheme"
-    },
-    {
-      "components": [
-        {
-          "x": 9.1249,
-          "y": 4.5936,
-          "scaleX": 1.0,
-          "scaleY": 1.0,
-          "rotation": 0.0,
-          "@class": "Transform"
-        },
-        {
-          "originX": 0.555,
-          "originY": 0.085,
-          "@class": "Origin"
-        },
-        {
-          "tint": {
-            "r": 0.0,
-            "g": 0.0,
-            "b": 0.0,
-            "a": 1.0
-          },
-          "@class": "Tint"
-        },
-        {
-          "asset": {
-            "fontSize": 36,
-            "relativePath": "font/PRIMEMIN.ttf",
-            "@class": "TtfFontAsset"
-          },
-          "@class": "AssetReference"
-        },
-        {
-          "pixelsPerUnits": 100.0,
-          "scale": 0.01,
-          "@class": "PixelsPerUnit"
-        },
-        {
-          "@class": "Invisible"
-        },
-        {
-          "text": "test text 2",
-          "autoSetOriginToCenter": false,
-          "isUsesDistanceField": false,
-          "@class": "ProtoVisText"
-        },
-        {
-          "layerId": 2,
-          "@class": "Layer"
-        },
-        {
-          "uuid": "43afea35-345c-453a-96d9-b84409de92d6",
-          "@class": "VisUUID"
-        },
-        {
-          "zIndex": 1,
-          "@class": "Renderable"
-        },
-        {
-          "id": "text",
           "@class": "VisID"
         },
         {
-          "componentsToDrop": [
+          "variables": [
             {
-              "@content": "PixelsPerUnit",
-              "@class": "Class"
+              "key": "button",
+              "value": "stop",
+              "@class-key": "String",
+              "@class-value": "String"
             }
           ],
-          "@class": "ExporterDropsComponent"
+          "@class": "Variables"
         }
       ],
       "@class": "EntityScheme"
@@ -495,16 +306,16 @@
     {
       "components": [
         {
-          "x": 9.6541,
-          "y": 5.078,
-          "scaleX": 1.0,
-          "scaleY": 1.0,
+          "x": 905.19604,
+          "y": -94.28293,
+          "scaleX": 0.5,
+          "scaleY": 0.5,
           "rotation": 0.0,
           "@class": "Transform"
         },
         {
-          "originX": 0.64,
-          "originY": 0.64,
+          "originX": 214.0,
+          "originY": 287.5,
           "@class": "Origin"
         },
         {
@@ -518,7 +329,7 @@
         },
         {
           "asset": {
-            "relativePath": "gfx/win.png",
+            "relativePath": "gfx/pirate.png",
             "@class": "TextureRegionAsset"
           },
           "@class": "AssetReference"
@@ -526,28 +337,239 @@
         {
           "flipX": false,
           "flipY": false,
-          "width": 1.28,
-          "height": 1.28,
+          "width": 428.0,
+          "height": 575.0,
           "@class": "ProtoVisSprite"
         },
         {
           "@class": "Invisible"
         },
         {
-          "layerId": 2,
+          "layerId": 1,
           "@class": "Layer"
         },
         {
-          "uuid": "32276396-ab3e-49b0-a906-61985b27ad5f",
+          "uuid": "2692aa49-85e1-4bd4-a66a-e92d6dd18414",
           "@class": "VisUUID"
         },
         {
-          "zIndex": 1,
+          "zIndex": 0,
           "@class": "Renderable"
         },
         {
-          "id": "text",
           "@class": "VisID"
+        },
+        {
+          "variables": [
+            {
+              "key": "uniqueId",
+              "value": "pirate",
+              "@class-key": "String",
+              "@class-value": "String"
+            }
+          ],
+          "@class": "Variables"
+        }
+      ],
+      "@class": "EntityScheme"
+    },
+    {
+      "components": [
+        {
+          "x": -220.0723,
+          "y": -2.7641,
+          "scaleX": 1.0,
+          "scaleY": 1.0,
+          "rotation": 0.0,
+          "@class": "Transform"
+        },
+        {
+          "originX": 64.0,
+          "originY": 64.0,
+          "@class": "Origin"
+        },
+        {
+          "tint": {
+            "r": 1.0,
+            "g": 1.0,
+            "b": 1.0,
+            "a": 1.0
+          },
+          "@class": "Tint"
+        },
+        {
+          "asset": {
+            "relativePath": "gfx/lose.png",
+            "@class": "TextureRegionAsset"
+          },
+          "@class": "AssetReference"
+        },
+        {
+          "flipX": false,
+          "flipY": false,
+          "width": 128.0,
+          "height": 128.0,
+          "@class": "ProtoVisSprite"
+        },
+        {
+          "layerId": 0,
+          "@class": "Layer"
+        },
+        {
+          "uuid": "c8162ec9-bf37-41b3-a457-5e8477248367",
+          "@class": "VisUUID"
+        },
+        {
+          "zIndex": 0,
+          "@class": "Renderable"
+        },
+        {
+          "@class": "VisID"
+        },
+        {
+          "variables": [
+            {
+              "key": "uniqueId",
+              "value": "coin_lose",
+              "@class-key": "String",
+              "@class-value": "String"
+            }
+          ],
+          "@class": "Variables"
+        }
+      ],
+      "@class": "EntityScheme"
+    },
+    {
+      "components": [
+        {
+          "x": 546.31274,
+          "y": 589.90247,
+          "scaleX": 1.0,
+          "scaleY": 1.0,
+          "rotation": 0.0,
+          "@class": "Transform"
+        },
+        {
+          "originX": 106.0,
+          "originY": 57.0,
+          "@class": "Origin"
+        },
+        {
+          "tint": {
+            "r": 1.0,
+            "g": 1.0,
+            "b": 1.0,
+            "a": 1.0
+          },
+          "@class": "Tint"
+        },
+        {
+          "asset": {
+            "relativePath": "gfx/play.png",
+            "@class": "TextureRegionAsset"
+          },
+          "@class": "AssetReference"
+        },
+        {
+          "flipX": false,
+          "flipY": false,
+          "width": 212.0,
+          "height": 114.0,
+          "@class": "ProtoVisSprite"
+        },
+        {
+          "layerId": 0,
+          "@class": "Layer"
+        },
+        {
+          "uuid": "9267fe8f-6cba-4d2e-8884-2bab17de975c",
+          "@class": "VisUUID"
+        },
+        {
+          "zIndex": 0,
+          "@class": "Renderable"
+        },
+        {
+          "@class": "VisID"
+        },
+        {
+          "variables": [
+            {
+              "key": "button",
+              "value": "close",
+              "@class-key": "String",
+              "@class-value": "String"
+            }
+          ],
+          "@class": "Variables"
+        }
+      ],
+      "@class": "EntityScheme"
+    },
+    {
+      "components": [
+        {
+          "x": 785.5285,
+          "y": 601.451,
+          "scaleX": 1.0,
+          "scaleY": 1.0,
+          "rotation": 0.0,
+          "@class": "Transform"
+        },
+        {
+          "originX": 106.0,
+          "originY": 57.0,
+          "@class": "Origin"
+        },
+        {
+          "tint": {
+            "r": 1.0,
+            "g": 1.0,
+            "b": 1.0,
+            "a": 1.0
+          },
+          "@class": "Tint"
+        },
+        {
+          "asset": {
+            "relativePath": "gfx/play.png",
+            "@class": "TextureRegionAsset"
+          },
+          "@class": "AssetReference"
+        },
+        {
+          "flipX": false,
+          "flipY": false,
+          "width": 212.0,
+          "height": 114.0,
+          "@class": "ProtoVisSprite"
+        },
+        {
+          "layerId": 0,
+          "@class": "Layer"
+        },
+        {
+          "uuid": "c3c9bd4f-85f2-46ce-8667-ebbbc020fa40",
+          "@class": "VisUUID"
+        },
+        {
+          "zIndex": 0,
+          "@class": "Renderable"
+        },
+        {
+          "@class": "VisID"
+        },
+        {
+          "variables": [
+            {
+              "key": "button",
+              "value": "replay",
+              "@class-key": "String",
+              "@class-value": "String"
+            }
+          ],
+          "@class": "Variables"
         }
       ],
       "@class": "EntityScheme"
